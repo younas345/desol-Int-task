@@ -7,7 +7,7 @@ export const submitLogin = createAsyncThunk(
     async (loginData, { rejectWithValue }) => {
         try {
             // debugger
-            const response = await axios.post('http://localhost:4000/api/users', loginData);
+            const response = await axios.post('https://desol-int-task.vercel.app//users', loginData);
 
             if (response.data.success) {
                 message.success(response.data.message);
