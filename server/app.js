@@ -15,7 +15,7 @@ const port = process.env.PORT || 3000;
 // Middleware
 app.use(
     cors({
-      origin: ['http://localhost:5173'],
+      origin: ['https://desol-int-task-2i5e.vercel.app/'],
       methods: ['POST'],
       allowedHeaders: ['Content-Type', 'Authorization'],
       credentials: true,
