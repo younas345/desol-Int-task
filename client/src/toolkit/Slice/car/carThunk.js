@@ -7,7 +7,7 @@ export const submitCar = createAsyncThunk(
     async (carData, { rejectWithValue }) => {
         try {
             // debugger
-            const response = await axios.post('http://localhost:4000/api/cars', carData);
+            const response = await axios.post('https://desol-int-task.vercel.app//cars', carData);
 
             if (response.data.success) {
                 message.success(response.data.message);
